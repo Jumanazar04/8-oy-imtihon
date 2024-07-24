@@ -49,7 +49,7 @@ const GeneralLayout: React.FC<Props> = ({ children }) => {
                 <div className="container mx-auto px-4">
                     <div className="my-20 flex justify-between footerCards">
                         <div className="footerLogo">
-                            <h2>Furniro</h2>
+                            <h2>Furniture</h2>
                             <span>400 University Drive Suite 200 Coral Gables,<br />
                                 FL 33134 USA</span>
                         </div>

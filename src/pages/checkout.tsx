@@ -1,4 +1,3 @@
-// pages/about.tsx
 import React from 'react';
 import Image from 'next/image';
 import logo from '@/assets/main-logo.png';
@@ -68,6 +67,7 @@ const About: React.FC = () => {
             </form>
           </div>
           <div className="detail2 w-1/2">
+            
           </div>
         </div>
       </section>
