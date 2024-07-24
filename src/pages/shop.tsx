@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import { Product } from '.'
 import { GetStaticProps } from 'next'
+import logo from '@/assets/main-logo.png'
+
 
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -36,7 +38,8 @@ const shop:React.FC<ShopProps> = ({products})=> {
   return (
     <div>
     <MainLayout>
-      <div className='flex justify-center items-center flex-col h-[316px]'>
+      <div className='flex justify-center items-center flex-col h-[316px]'>  
+      <Image className='' src={logo} alt="img" />
         <h1 className='text-3xl font-bold my-4'>Shop</h1>
         <div className='flex items-center'>
           <h2 className='text-xl font-bold'>Home{`>`}</h2>
