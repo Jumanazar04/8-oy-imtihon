@@ -5,7 +5,7 @@ import React from 'react';
 import { Product } from '@/pages/index';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '@/Redux Toolkit/features/product/productSlice';
-import { message } from 'antd'
+import { message } from 'antd';
 
 interface ProductPageProps {
   product: Product;
@@ -16,12 +16,12 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
 
   const handleAddToCart = () => {
     dispatch(addToCart(product));
-    message.success('Save to Cart')
+    alert('Save to Cart successfuly')
   };
 
   return (
-    <div className="container mx-auto">
-      <div className="bg-white shadow-md rounded p-8 gap-14 flex my-14">
+    <div className="container mx-auto px-12">
+      <div className="bg-white shadow-md rounded p-8 px-10 gap-14 flex my-14">
         <Image
           src={product.image}
           alt={product.title}
