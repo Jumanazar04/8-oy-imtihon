@@ -55,7 +55,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ categories, products }) => {
   return (
     <main>
-      <Header categories={categories} products={products} />
+      <Header categories={categories} products={products}  />
     </main>
   );
 };

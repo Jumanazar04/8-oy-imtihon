@@ -36,7 +36,7 @@ const GeneralLayout: React.FC<Props> = ({ children }) => {
             <Link href="/heart">
               <Image src={heart} alt="profile" width={30} height={30} />
             </Link>
-            <Link href="/korzina">
+            <Link href="/cart">
               <Image src={korzina} alt="profile" width={30} height={30} />
             </Link>
           </div>
@@ -45,6 +45,35 @@ const GeneralLayout: React.FC<Props> = ({ children }) => {
       <main>
         {children}
       </main>
+      <footer className="border">
+                <div className="container mx-auto px-4">
+                    <div className="my-20 flex justify-between footerCards">
+                        <div className="footerLogo">
+                            <h2>Furniro</h2>
+                            <span>400 University Drive Suite 200 Coral Gables,<br />
+                                FL 33134 USA</span>
+                        </div>
+                        <div className="footerLinks">
+                            <span>Links</span>
+                            <Link className='footerLink' href={"/"}>Home</Link>
+                            <Link className='footerLink' href={"/shop"}>Shop</Link>
+                            <Link className='footerLink' href={"/about"}>About</Link>
+                            <Link className='footerLink' href={"/contact"}>Contact</Link>
+                        </div>
+                        <div className="footerHelp">
+                            <span>Help</span>
+                            <p>Returns</p>
+                            <p>Pravicy Policy</p>
+                            <p>Payment Options</p>
+                        </div>
+                        <div className="footerNewsLetter">
+                            <span>NewsLetter</span><br />
+                            <input type="text" placeholder='Enter your email...'/>
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+      </footer>
     </div>
   );
 };
